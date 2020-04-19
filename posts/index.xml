@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 唐继璇的博客</title>
-    <link>http://example.org/posts/</link>
+    <link>http://tangallison2.github.io/posts/</link>
     <description>Recent content in Posts on 唐继璇的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Apr 2020 22:52:38 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://tangallison2.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Second</title>
-      <link>http://example.org/posts/second/</link>
+      <link>http://tangallison2.github.io/posts/second/</link>
       <pubDate>Sun, 19 Apr 2020 22:52:38 +0800</pubDate>
       
-      <guid>http://example.org/posts/second/</guid>
+      <guid>http://tangallison2.github.io/posts/second/</guid>
       <description>你叫啥</description>
     </item>
     
     <item>
       <title>如何用hugo搭建一个博客</title>
-      <link>http://example.org/posts/first/</link>
+      <link>http://tangallison2.github.io/posts/first/</link>
       <pubDate>Sun, 19 Apr 2020 22:45:52 +0800</pubDate>
       
-      <guid>http://example.org/posts/first/</guid>
+      <guid>http://tangallison2.github.io/posts/first/</guid>
       <description>在已有github账户和已安装Cmder和VSCODE的情况下，使用hugo搭建一个博客 当然如果没有注册github账户和未安装Cmder和VSCODE软件，可以先去安装啊
  首先安装hugo   点它hugo安装包链接 选择适合你的版本号安装，例如windows用户可选hugo_XXXXX_Windows-64bit.zip 安装后，可在Cmder软件中输入  hugo version 如果显示出版本信息，则安装成功。
 Google里面搜索hugo,进入hugo官网   点击
@@ -38,7 +38,7 @@ draft:false 可以在博客里面写一些内容
 step5
 hugo server -D 效果是启动hugo服务器，ctrl+点击http://localhost:1313/，就能查看my-first-post.md内容。
 step6 用VSCODE打开XXXX.github.io-creator，找到并打开文件config.toml，用更私人的标题替代下面的对应代码。
-baseURL = &amp;quot;https://example.org/&amp;quot; languageCode = &amp;quot;en-us&amp;quot; title = &amp;quot;My New Hugo Site&amp;quot; theme = &amp;quot;ananke&amp;quot; step7 在Cmder中输入
+baseURL = &amp;quot;https://tangallison2.github.io/&amp;quot; languageCode = &amp;quot;en-us&amp;quot; title = &amp;quot;My New Hugo Site&amp;quot; theme = &amp;quot;ananke&amp;quot; step7 在Cmder中输入
 hugo -D 这一步会生成一个public目录</description>
     </item>
     
