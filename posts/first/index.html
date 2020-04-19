@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+
+<head>
   <meta http-equiv="content-type" content="text/html;charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noodp"/>
-  
-  
-  
-  
-  
-  <link rel="next" href="http://tangallison2.github.io/posts/second/" />
-  <link rel="canonical" href="http://tangallison2.github.io/posts/first/" />
+  <meta name="robots" content="noodp" />
+
+
+
+
+
+  <link rel="next" href="http://tangjixuan.xyz/posts/second/" />
+  <link rel="canonical" href="http://tangjixuan.xyz/posts/first/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -20,33 +21,33 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <title>
-       
-       
-           如何用hugo搭建一个博客 | 唐继璇的博客
-       
+
+
+    如何用hugo搭建一个博客 | 唐继璇的博客
+
   </title>
   <meta name="title" content="如何用hugo搭建一个博客 | 唐继璇的博客">
-    
-  
+
+
   <link rel="stylesheet" href="/font/iconfont.css">
   <link rel="stylesheet" href="/css/main.min.css">
 
 
-  
-  
- 
 
-<script type="application/ld+json">
+
+
+
+  <script type="application/ld+json">
  "@context" : "http://schema.org",
     "@type" : "BlogPosting",
     "mainEntityOfPage": {
          "@type": "WebPage",
-         "@id": "http:\/\/tangallison2.github.io\/"
+         "@id": "http:\/\/tangjixuan.xyz\/"
     },
     "articleSection" : "posts",
     "name" : "如何用hugo搭建一个博客",
     "headline" : "如何用hugo搭建一个博客",
-    "description" : "在已有github账户和已安装Cmder和VSCODE的情况下，使用hugo搭建一个博客 当然如果没有注册github账户和未安装Cmder和VSCODE软件，可以先去安装啊\n 首先安装hugo   点它hugo安装包链接 选择适合你的版本号安装，例如windows用户可选hugo_XXXXX_Windows-64bit.zip 安装后，可在Cmder软件中输入  hugo version 如果显示出版本信息，则安装成功。\nGoogle里面搜索hugo,进入hugo官网   点击\n 先在Cmder进入你放文件的目录，从Step 2开始一步一步更着官网的代码在Cmder上输入,下面的XXXX你可以替换成你的github用户名。  step2\nhugo new site XXXX.github.io-creator 在之后建立的github远程仓库命名必须为：XXXX.github.io,不用深究，后面会说到。\nstep3 建立XXXX.github.io-creator目录的本地仓库，并下载一个博客主题\ncd XXXX.github.io-creator git init git submodule add https:\/\/github.com\/budparr\/gohugo-theme-ananke.git themes\/ananke step4\nhugo new posts\/my-first-post.md 这步之后生成一个my-first-post.md的博客，用VSCODE打开后修改内容\ndraft:false 可以在博客里面写一些内容\nstep5\nhugo server -D 效果是启动hugo服务器，ctrl\x2b点击http:\/\/localhost:1313\/，就能查看my-first-post.md内容。\nstep6 用VSCODE打开XXXX.github.io-creator，找到并打开文件config.toml，用更私人的标题替代下面的对应代码。\nbaseURL = \x26quot;https:\/\/tangallison2.github.io\/\x26quot; languageCode = \x26quot;en-us\x26quot; title = \x26quot;My New Hugo Site\x26quot; theme = \x26quot;ananke\x26quot; step7 在Cmder中输入\nhugo -D 这一步会生成一个public目录",
+    "description" : "在已有github账户和已安装Cmder和VSCODE的情况下，使用hugo搭建一个博客 当然如果没有注册github账户和未安装Cmder和VSCODE软件，可以先去安装啊\n 首先安装hugo   点它hugo安装包链接 选择适合你的版本号安装，例如windows用户可选hugo_XXXXX_Windows-64bit.zip 安装后，可在Cmder软件中输入  hugo version 如果显示出版本信息，则安装成功。\nGoogle里面搜索hugo,进入hugo官网   点击\n 先在Cmder进入你放文件的目录，从Step 2开始一步一步更着官网的代码在Cmder上输入,下面的XXXX你可以替换成你的github用户名。  step2\nhugo new site XXXX.github.io-creator 在之后建立的github远程仓库命名必须为：XXXX.github.io,不用深究，后面会说到。\nstep3 建立XXXX.github.io-creator目录的本地仓库，并下载一个博客主题\ncd XXXX.github.io-creator git init git submodule add https:\/\/github.com\/budparr\/gohugo-theme-ananke.git themes\/ananke step4\nhugo new posts\/my-first-post.md 这步之后生成一个my-first-post.md的博客，用VSCODE打开后修改内容\ndraft:false 可以在博客里面写一些内容\nstep5\nhugo server -D 效果是启动hugo服务器，ctrl\x2b点击http:\/\/localhost:1313\/，就能查看my-first-post.md内容。\nstep6 用VSCODE打开XXXX.github.io-creator，找到并打开文件config.toml，用更私人的标题替代下面的对应代码。\nbaseURL = \x26quot;https:\/\/tangjixuan.xyz\/\x26quot; languageCode = \x26quot;en-us\x26quot; title = \x26quot;My New Hugo Site\x26quot; theme = \x26quot;ananke\x26quot; step7 在Cmder中输入\nhugo -D 这一步会生成一个public目录",
     "inLanguage" : "en-us",
     "author" : "",
     "creator" : "",
@@ -56,7 +57,7 @@
     "copyrightYear" : "2020",
     "datePublished": "2020-04-19 22:45:52 \x2b0800 CST",
     "dateModified" : "2020-04-19 22:45:52 \x2b0800 CST",
-    "url" : "http:\/\/tangallison2.github.io\/posts\/first\/",
+    "url" : "http:\/\/tangjixuan.xyz\/posts\/first\/",
     "wordCount" : "103",
     "keywords" : [  "唐继璇的博客"]
 }
@@ -64,196 +65,210 @@
 
 </head>
 
-  
 
 
-  <body class="">
-    <div class="wrapper">
-        <nav class="navbar">
-    <div class="container">
+
+<body class="">
+  <div class="wrapper">
+    <nav class="navbar">
+      <div class="container">
         <div class="navbar-header header-logo">
-        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="http://tangallison2.github.io/">唐继璇的博客</a>
+          <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a
+            href="http://tangjixuan.xyz/">唐继璇的博客</a>
         </div>
         <div class="menu navbar-right">
-                
-                
+
+
         </div>
-    </div>
-</nav>
-<nav class="navbar-mobile" id="nav-mobile" style="display: none">
-     <div class="container">
+      </div>
+    </nav>
+    <nav class="navbar-mobile" id="nav-mobile" style="display: none">
+      <div class="container">
         <div class="navbar-header">
-            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="http://tangallison2.github.io/">唐继璇的博客</a></div>
-            <div class="menu-toggle">
-                <span></span><span></span><span></span>
-            </div>
+          <div> <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a
+              href="http://tangjixuan.xyz/">唐继璇的博客</a></div>
+          <div class="menu-toggle">
+            <span></span><span></span><span></span>
+          </div>
         </div>
-     
-          <div class="menu" id="mobile-menu">
-                
-                
+
+        <div class="menu" id="mobile-menu">
+
+
         </div>
-    </div>
-</nav>
-    	 <main class="main">
-          <div class="container">
-      		
-<article class="post-warp" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">如何用hugo搭建一个博客</h1>
-        <div class="post-meta">
-                Written by <a itemprop="name" href="http://tangallison2.github.io/" rel="author"></a> with ♥ 
-                <span class="post-time">
+      </div>
+    </nav>
+    <main class="main">
+      <div class="container">
+
+        <article class="post-warp" itemscope itemtype="http://schema.org/Article">
+          <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">如何用hugo搭建一个博客</h1>
+            <div class="post-meta">
+              Written by <a itemprop="name" href="http://tangjixuan.xyz/" rel="author"></a> with ♥
+              <span class="post-time">
                 on <time datetime=2020-04-19 itemprop="datePublished">April 19, 2020</time>
-                </span>
-                in
-                
-        </div>
-    </header>
-    <div class="post-content">
-        
+              </span>
+              in
 
-        
-            
-        
+            </div>
+          </header>
+          <div class="post-content">
 
-        
-        
-     
-          
-          
-          
 
-          
-          
-          
 
-          <p>在已有github账户和已安装Cmder和VSCODE的情况下，使用hugo搭建一个博客
-当然如果没有注册github账户和未安装Cmder和VSCODE软件，可以先去安装啊</p>
-<ol>
-<li>首先安装hugo</li>
-</ol>
-<ul>
-<li>点它<a href="https://github.com/gohugoio/hugo/releases">hugo安装包链接</a></li>
-<li>选择适合你的版本号安装，例如windows用户可选hugo_XXXXX_Windows-64bit.zip</li>
-<li>安装后，可在Cmder软件中输入</li>
-</ul>
-<pre><code>hugo version
-</code></pre><p>如果显示出版本信息，则安装成功。</p>
-<ol start="2">
-<li>Google里面搜索hugo,进入hugo<a href="https://gohugo.io/">官网</a></li>
-</ol>
-<ul>
-<li>点击<br>
-<img src="/static/quickstart.png" alt=""></li>
-<li>先在Cmder进入你放文件的目录，从Step 2开始一步一步更着官网的代码在Cmder上输入,下面的XXXX你可以替换成你的github用户名。</li>
-</ul>
-<p>step2</p>
-<pre><code>hugo new site XXXX.github.io-creator
-</code></pre><p>在之后建立的github远程仓库命名必须为：XXXX.github.io,不用深究，后面会说到。</p>
-<p>step3 建立XXXX.github.io-creator目录的本地仓库，并下载一个博客主题</p>
-<pre><code>cd XXXX.github.io-creator
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <p>在已有github账户和已安装Cmder和VSCODE的情况下，使用hugo搭建一个博客
+              当然如果没有注册github账户和未安装Cmder和VSCODE软件，可以先去安装啊</p>
+            <ol>
+              <li>首先安装hugo</li>
+            </ol>
+            <ul>
+              <li>点它<a href="https://github.com/gohugoio/hugo/releases">hugo安装包链接</a></li>
+              <li>选择适合你的版本号安装，例如windows用户可选hugo_XXXXX_Windows-64bit.zip</li>
+              <li>安装后，可在Cmder软件中输入</li>
+            </ul>
+            <pre><code>hugo version
+</code></pre>
+            <p>如果显示出版本信息，则安装成功。</p>
+            <ol start="2">
+              <li>Google里面搜索hugo,进入hugo<a href="https://gohugo.io/">官网</a></li>
+            </ol>
+            <ul>
+              <li>点击<br>
+                <img src="/static/quickstart.png" alt=""></li>
+              <li>先在Cmder进入你放文件的目录，从Step 2开始一步一步更着官网的代码在Cmder上输入,下面的XXXX你可以替换成你的github用户名。</li>
+            </ul>
+            <p>step2</p>
+            <pre><code>hugo new site XXXX.github.io-creator
+</code></pre>
+            <p>在之后建立的github远程仓库命名必须为：XXXX.github.io,不用深究，后面会说到。</p>
+            <p>step3 建立XXXX.github.io-creator目录的本地仓库，并下载一个博客主题</p>
+            <pre><code>cd XXXX.github.io-creator
 git init
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
-</code></pre><p>step4</p>
-<pre><code>hugo new posts/my-first-post.md
-</code></pre><p>这步之后生成一个my-first-post.md的博客，用VSCODE打开后修改内容</p>
-<pre><code>draft:false
-</code></pre><p>可以在博客里面写一些内容</p>
-<p>step5</p>
-<pre><code>hugo server -D
-</code></pre><p>效果是启动hugo服务器，ctrl+点击http://localhost:1313/，就能查看my-first-post.md内容。</p>
-<p>step6 用VSCODE打开XXXX.github.io-creator，找到并打开文件config.toml，用更私人的标题替代下面的对应代码。</p>
-<pre><code>baseURL = &quot;https://tangallison2.github.io/&quot;
+</code></pre>
+            <p>step4</p>
+            <pre><code>hugo new posts/my-first-post.md
+</code></pre>
+            <p>这步之后生成一个my-first-post.md的博客，用VSCODE打开后修改内容</p>
+            <pre><code>draft:false
+</code></pre>
+            <p>可以在博客里面写一些内容</p>
+            <p>step5</p>
+            <pre><code>hugo server -D
+</code></pre>
+            <p>效果是启动hugo服务器，ctrl+点击http://localhost:1313/，就能查看my-first-post.md内容。</p>
+            <p>step6 用VSCODE打开XXXX.github.io-creator，找到并打开文件config.toml，用更私人的标题替代下面的对应代码。</p>
+            <pre><code>baseURL = &quot;http://tangjixuan.xyz/&quot;
 languageCode = &quot;en-us&quot;
 title = &quot;My New Hugo Site&quot;
 theme = &quot;ananke&quot;
-</code></pre><p>step7 在Cmder中输入</p>
-<pre><code>hugo -D
-</code></pre><p>这一步会生成一个public目录</p>
-<ol start="3">
-<li>
-<p>在XXXX.github.io-creator目录下新建.gitignore文件，编辑内容为/public/,意思是当前仓库不要储存public目录。</p>
-</li>
-<li>
-<p>在public目录下建立本地仓库</p>
-</li>
-</ol>
-<pre><code>git init
+</code></pre>
+            <p>step7 在Cmder中输入</p>
+            <pre><code>hugo -D
+</code></pre>
+            <p>这一步会生成一个public目录</p>
+            <ol start="3">
+              <li>
+                <p>在XXXX.github.io-creator目录下新建.gitignore文件，编辑内容为/public/,意思是当前仓库不要储存public目录。</p>
+              </li>
+              <li>
+                <p>在public目录下建立本地仓库</p>
+              </li>
+            </ol>
+            <pre><code>git init
 git add .
 git commit -v
-</code></pre><p>并输入提交信息</p>
-<ol start="5">
-<li>
-<p>在github上建立一个名为XXXX.github.io的远程仓库</p>
-</li>
-<li>
-<p>把public本地仓库上传到远程仓库</p>
-</li>
-</ol>
-<pre><code>git remote add origin git@github.com:XXXX/XXXX.github.io.git
+</code></pre>
+            <p>并输入提交信息</p>
+            <ol start="5">
+              <li>
+                <p>在github上建立一个名为XXXX.github.io的远程仓库</p>
+              </li>
+              <li>
+                <p>把public本地仓库上传到远程仓库</p>
+              </li>
+            </ol>
+            <pre><code>git remote add origin git@github.com:XXXX/XXXX.github.io.git
 git push -u origin master
-</code></pre><ol start="7">
-<li>上传成功后，进入对应的github远程仓库，点击settings,找到Github Pages里source下面的按钮改为 master branch ,点击Github Pages里的 <a href="https://XXXX.github.io/,">https://XXXX.github.io/,</a>就能看到博客了。</li>
-<li>可以在namesilo或者阿里云上面注册一个域名，把Github Pages的Custom domain替换成自己注册的域名，同时也可点Custom domain后面的learn more 采集IP地址，在购买域名的网站上配置域名的DNS，可在Cmder里输入</li>
-</ol>
-<pre><code>nslookup XXXX
-</code></pre><p>XXXX需替换成自己购买的域名，测试是否配置成功。若测试成功，域名即可显示博客。</p>
+</code></pre>
+            <ol start="7">
+              <li>上传成功后，进入对应的github远程仓库，点击settings,找到Github Pages里source下面的按钮改为 master branch ,点击Github Pages里的 <a
+                  href="https://XXXX.github.io/,">https://XXXX.github.io/,</a>就能看到博客了。</li>
+              <li>可以在namesilo或者阿里云上面注册一个域名，把Github Pages的Custom domain替换成自己注册的域名，同时也可点Custom domain后面的learn more
+                采集IP地址，在购买域名的网站上配置域名的DNS，可在Cmder里输入</li>
+            </ol>
+            <pre><code>nslookup XXXX
+</code></pre>
+            <p>XXXX需替换成自己购买的域名，测试是否配置成功。若测试成功，域名即可显示博客。</p>
 
-    </div>
-
-    <div class="post-copyright">
-            
-           
-             
-            <p class="copyright-item">
-                    <span>Link:</span>
-                    <a href=http://tangallison2.github.io/posts/first/>http://tangallison2.github.io/posts/first/</span>
-            </p>
-            
-            
-    </div>
-
-  
-    <div class="post-tags">
-        
-        <section>
-                <a href="javascript:window.history.back();">back</a></span> · 
-                <span><a href="http://tangallison2.github.io/">home</a></span>
-        </section>
-    </div>
-
-    <div class="post-nav">
-         
-        
-        <a href="http://tangallison2.github.io/posts/second/" class="next" rel="next" title="Second">Second&nbsp;<i class="iconfont icon-right"></i></a>
-        
-    </div>
-
-    <div class="post-comment">
-          
-                 
-          
-    </div>
-</article>
           </div>
-		   </main>
-      <footer class="footer">
-    <div class="copyright">
+
+          <div class="post-copyright">
+
+
+
+            <p class="copyright-item">
+              <span>Link:</span>
+              <a href=http://tangjixuan.xyz/posts/first />http://tangjixuan.xyz/posts/first/</span>
+            </p>
+
+
+          </div>
+
+
+          <div class="post-tags">
+
+            <section>
+              <a href="javascript:window.history.back();">back</a></span> ·
+              <span><a href="http://tangjixuan.xyz/">home</a></span>
+            </section>
+          </div>
+
+          <div class="post-nav">
+
+
+            <a href="http://tangjixuan.xyz/posts/second/" class="next" rel="next" title="Second">Second&nbsp;<i
+                class="iconfont icon-right"></i></a>
+
+          </div>
+
+          <div class="post-comment">
+
+
+
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="copyright">
         &copy;
-        
+
         <span class="with-love">
-    	 <i class="iconfont icon-love"></i> 
-         </span>
-         
-
-         
-		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
-    </div>
-</footer>
+          <i class="iconfont icon-love"></i>
+        </span>
 
 
 
+        <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a
+            href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span>
+      </div>
+    </footer>
 
 
 
@@ -263,15 +278,19 @@ git push -u origin master
 
 
 
-    
-     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
-      
-     <script src="/js/vendor_gallery.min.js" async="" ></script>
-    
-  
 
 
 
-     </div>
-  </body>
+
+    <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">
+
+    <script src="/js/vendor_gallery.min.js" async=""></script>
+
+
+
+
+
+  </div>
+</body>
+
 </html>
