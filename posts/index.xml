@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 唐继璇的博客</title>
+    <link>http://example.org/posts/</link>
+    <description>Recent content in Posts on 唐继璇的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 22:52:38 +0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Second</title>
+      <link>http://example.org/posts/second/</link>
+      <pubDate>Sun, 19 Apr 2020 22:52:38 +0800</pubDate>
+      
+      <guid>http://example.org/posts/second/</guid>
+      <description>你叫啥</description>
+    </item>
+    
+    <item>
+      <title>如何用hugo搭建一个博客</title>
+      <link>http://example.org/posts/first/</link>
+      <pubDate>Sun, 19 Apr 2020 22:45:52 +0800</pubDate>
+      
+      <guid>http://example.org/posts/first/</guid>
+      <description>在已有github账户和已安装Cmder和VSCODE的情况下，使用hugo搭建一个博客 当然如果没有注册github账户和未安装Cmder和VSCODE软件，可以先去安装啊
+ 首先安装hugo   点它hugo安装包链接 选择适合你的版本号安装，例如windows用户可选hugo_XXXXX_Windows-64bit.zip 安装后，可在Cmder软件中输入  hugo version 如果显示出版本信息，则安装成功。
+Google里面搜索hugo,进入hugo官网   点击
+ 先在Cmder进入你放文件的目录，从Step 2开始一步一步更着官网的代码在Cmder上输入,下面的XXXX你可以替换成你的github用户名。  step2
+hugo new site XXXX.github.io-creator 在之后建立的github远程仓库命名必须为：XXXX.github.io,不用深究，后面会说到。
+step3 建立XXXX.github.io-creator目录的本地仓库，并下载一个博客主题
+cd XXXX.github.io-creator git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke step4
+hugo new posts/my-first-post.md 这步之后生成一个my-first-post.md的博客，用VSCODE打开后修改内容
+draft:false 可以在博客里面写一些内容
+step5
+hugo server -D 效果是启动hugo服务器，ctrl+点击http://localhost:1313/，就能查看my-first-post.md内容。
+step6 用VSCODE打开XXXX.github.io-creator，找到并打开文件config.toml，用更私人的标题替代下面的对应代码。
+baseURL = &amp;quot;https://example.org/&amp;quot; languageCode = &amp;quot;en-us&amp;quot; title = &amp;quot;My New Hugo Site&amp;quot; theme = &amp;quot;ananke&amp;quot; step7 在Cmder中输入
+hugo -D 这一步会生成一个public目录</description>
+    </item>
+    
+  </channel>
+</rss>
