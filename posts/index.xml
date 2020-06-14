@@ -6,10 +6,21 @@
     <description>Recent content in Posts on 唐继璇的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2020 22:52:38 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2020 15:48:31 +0800</lastBuildDate>
     
 	<atom:link href="http://tangjixuan.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>《HTML入门笔记1》</title>
+      <link>http://tangjixuan.xyz/2020/third/</link>
+      <pubDate>Sun, 14 Jun 2020 15:48:31 +0800</pubDate>
+      
+      <guid>http://tangjixuan.xyz/2020/third/</guid>
+      <description>1. HTML 到底是谁发明的？  Tim Berners-Lee（李爵士）,他发明了 HTML、WWW、HTTP 和 URL，用自己写的浏览器访问了自己写的服务器。  2. HTML 起手应该写什么？ &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;zh-CN&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; 3. 常用的表章节的标签有哪些，分别是什么意思?  标题 h1~h6 章节 section 文章 article 段落 p 头部 header 脚部 footer 主要内容 main 旁支内容 aside 划分 div  4. 全局属性有哪些? class contenteditable
+hidden id style tabindex title
+5. 常用的内容标签有哪些，分别是什么意思（a、strong、em、code、pre 等等）?  ol+li (ordered list + list item 有顺序的列表+列表中的一项）  &amp;lt;p&amp;gt;每天要做的事情&amp;lt;/p&amp;gt; &amp;lt;ol&amp;gt; &amp;lt;li&amp;gt;吃饭&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;睡觉&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;玩游戏&amp;lt;/li&amp;gt; &amp;lt;/ol&amp;gt;   ul+li (unordered list +list item 无顺序的列表+列表中的一项)</description>
+    </item>
     
     <item>
       <title>草稿</title>
