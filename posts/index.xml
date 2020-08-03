@@ -40,15 +40,14 @@ _parent,在当前链接所在iframe的上一层打开
 xxx,如果有一个窗口叫xxx,就打开它，如果没有，就创建一个叫xxx的窗口，在新页面打开它。
 （在开发者工具console中输入window.name后回车可验证）
 （当iframe的名字和target的名字相同时，点击超链接可在对应iframe里面打开页面）
-&amp;lt;a href=&amp;quot;//google.com&amp;quot; target=&amp;quot;xxx&amp;quot;&amp;gt;google&amp;lt;/a&amp;gt; &amp;lt;hr&amp;gt; &amp;lt;iframe src=&amp;quot;&amp;quot; name=&amp;quot;xxx&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt; 2、img标签的用法 属性
-alt,当图片加载失败，就会显示alt的值。
+&amp;lt;a href=&amp;quot;//google.com&amp;quot; target=&amp;quot;xxx&amp;quot;&amp;gt;google&amp;lt;/a&amp;gt; &amp;lt;hr&amp;gt; &amp;lt;iframe src=&amp;quot;&amp;quot; name=&amp;quot;xxx&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt; 2、img标签的用法  属性  alt,当图片加载失败，就会显示alt的值。
 src,来源，值是图片的地址。
 height,高度，值是数字。
 width,宽度，值是数字。
 注意： 只写宽度，高度会自适应。
 只写高度，宽度会自适应。
 永远不要让图片变形。
-&amp;lt;img width=&amp;quot;400&amp;quot; src=&amp;quot;dog.png&amp;quot; alt=&amp;quot;一只狗&amp;quot;&amp;gt; 3、table标签的用法 &amp;lt;table&amp;gt; &amp;lt;thead&amp;gt;&amp;lt;/thead&amp;gt; &amp;lt;tbody&amp;gt;&amp;lt;/tbody&amp;gt; &amp;lt;tfoot&amp;gt;&amp;lt;/tfoot&amp;gt; &amp;lt;/table&amp;gt; 展开写法</description>
+&amp;lt;img width=&amp;quot;400&amp;quot; src=&amp;quot;dog.png&amp;quot; alt=&amp;quot;一只狗&amp;quot;&amp;gt;  onload/onerror 监听图片是否加载成功  &amp;lt;body&amp;gt; &amp;lt;script&amp;gt; xxx.</description>
     </item>
     
     <item>
