@@ -6,10 +6,50 @@
     <description>Recent content in Posts on 唐继璇的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jun 2020 15:48:31 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2020 20:06:12 +0800</lastBuildDate>
     
 	<atom:link href="http://tangjixuan.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>《HTML常用标签》</title>
+      <link>http://tangjixuan.xyz/2020/forth/</link>
+      <pubDate>Mon, 03 Aug 2020 20:06:12 +0800</pubDate>
+      
+      <guid>http://tangjixuan.xyz/2020/forth/</guid>
+      <description>1、a标签的用法  href属性，超文本引用。  &amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;超文本链接&amp;lt;/a&amp;gt; 备注：href的值可以是
+网址
+https://google.com
+http://google.com
+//google.com
+路径
+/a/b/c以及a/b/c
+（这里的/不是硬盘的根目录，而是http服务开启的根目录，在哪里开启的hs,哪里就是根目录）
+index.html以及./index.html
+伪协议
+javascript:代码;
+mailto:邮箱
+tel:手机号
+ID
+#xxx
+&amp;lt;a href=&amp;quot;javascript:alert(1);&amp;quot;&amp;gt;javascript伪协议&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;javascript:;&amp;quot;&amp;gt;空的伪协议&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;mailto:tangallison2@gmail.com&amp;quot;&amp;gt;发邮件给我&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;tel:(+86)18905509953&amp;quot;&amp;gt;打电话给我&amp;lt;/a&amp;gt;  target属性，作用是指在哪一个窗口打开超链接。  &amp;lt;a href=&amp;quot;输入网址&amp;quot; target=&amp;quot;_blank或者_self或者_top或者_parent&amp;quot;&amp;gt;&amp;lt;/a&amp;gt; 备注：target的不同值的不同意义
+_blank,在新页面中打开
+_self,在当前页面打开,self是默认值
+_top,在顶级窗口打开，当前页面iframe最上面的窗口打开
+_parent,在当前链接所在iframe的上一层打开
+xxx,如果有一个窗口叫xxx,就打开它，如果没有，就创建一个叫xxx的窗口，在新页面打开它。
+（在开发者工具console中输入window.name后回车可验证）
+（当iframe的名字和target的名字相同时，点击超链接可在对应iframe里面打开页面）
+&amp;lt;a href=&amp;quot;//google.com&amp;quot; target=&amp;quot;xxx&amp;quot;&amp;gt;google&amp;lt;/a&amp;gt; &amp;lt;hr&amp;gt; &amp;lt;iframe src=&amp;quot;&amp;quot; name=&amp;quot;xxx&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt; 2、img标签的用法 属性
+alt,当图片加载失败，就会显示alt的值。
+src,来源，值是图片的地址。
+height,高度，值是数字。
+width,宽度，值是数字。
+注意： 只写宽度，高度会自适应。
+只写高度，宽度会自适应。
+永远不要让图片变形。
+&amp;lt;img width=&amp;quot;400&amp;quot; src=&amp;quot;dog.png&amp;quot; alt=&amp;quot;一只狗&amp;quot;&amp;gt; 3、table标签的用法 &amp;lt;table&amp;gt; &amp;lt;thead&amp;gt;&amp;lt;/thead&amp;gt; &amp;lt;tbody&amp;gt;&amp;lt;/tbody&amp;gt; &amp;lt;tfoot&amp;gt;&amp;lt;/tfoot&amp;gt; &amp;lt;/table&amp;gt; 展开写法</description>
+    </item>
     
     <item>
       <title>《HTML入门笔记1》</title>
