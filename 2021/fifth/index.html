@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="tangallison2">
+  
+  
+  
+  <link rel="prev" href="http://tangjixuan.xyz/2020/forth/" />
+  
+  <link rel="canonical" href="http://tangjixuan.xyz/2021/fifth/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           《css知识总结》 | 唐继璇的博客
+       
+  </title>
+  <meta name="title" content="《css知识总结》 | 唐继璇的博客">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "http:\/\/tangjixuan.xyz\/"
+    },
+    "articleSection" : "posts",
+    "name" : "《css知识总结》",
+    "headline" : "《css知识总结》",
+    "description" : " 浏览器渲染原理   根据HTML构建HTML树(DOM) 根据CSS构建CSS树(CSSDOM) 将两棵树合并成一颗渲染树(render tree) Layout布局(文档流、盒模型、计算大小和位置) Paint绘制(边框颜色、文字颜色、阴影) Compose合成(根据层叠关系展示画面)    CSS 动画的两种做法   一种做法：使用两次transform  a选择器通过transform到b选择器， b选择器通过transform到c选择器\n或者使用keyframes\n@keyframes example-one{ from{ transfrom:translateX(0%); } to{ transform:translateX(100%); } } @keyframes example-two{ 0%{top:0;left:0;} 50%{top:50px;} 68%,72%{left:50px;} 100%{top:100px;left:100%; } 另一种做法：使用animation  缩写语法：\nanimation:时长|过渡方式|延迟时间|次数|方向|填充模式|是否暂停|动画名；\n时长：1s或者1000ms\n过渡方式：跟transition取值一样,如linear\n次数：数字或者infinite\n方向：reverse|alternate|alternate-reverse\n填充模式：none|forwards|backwards|both\n是否暂停：paused|running\n例如 动画名为example\nanimation: .5s linear 1s 10 alternate forwards example; ",
+    "inLanguage" : "en-us",
+    "author" : "tangallison2",
+    "creator" : "tangallison2",
+    "publisher": "tangallison2",
+    "accountablePerson" : "tangallison2",
+    "copyrightHolder" : "tangallison2",
+    "copyrightYear" : "2021",
+    "datePublished": "2021-02-03 00:38:16 \u002b0800 CST",
+    "dateModified" : "2021-02-03 00:38:16 \u002b0800 CST",
+    "url" : "http:\/\/tangjixuan.xyz\/2021\/fifth\/",
+    "wordCount" : "49",
+    "keywords" : [  "唐继璇的博客"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="http://tangjixuan.xyz/">唐继璇的博客</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">博客</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="http://tangjixuan.xyz/">唐继璇的博客</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">博客</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">《css知识总结》</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="http://tangjixuan.xyz/" rel="author">tangallison2</a> with ♥ 
+                <span class="post-time">
+                on <time datetime=2021-02-03 itemprop="datePublished">February 3, 2021</time>
+                </span>
+                in
+                
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <ul>
+<li>浏览器渲染原理</li>
+</ul>
+<ol>
+<li>根据HTML构建HTML树(DOM)</li>
+<li>根据CSS构建CSS树(CSSDOM)</li>
+<li>将两棵树合并成一颗渲染树(render tree)</li>
+<li>Layout布局(文档流、盒模型、计算大小和位置)</li>
+<li>Paint绘制(边框颜色、文字颜色、阴影)</li>
+<li>Compose合成(根据层叠关系展示画面)
+<img src="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/render-tree-construction.png" alt="渲染树的合成"></li>
+</ol>
+<ul>
+<li>CSS 动画的两种做法</li>
+</ul>
+<ol>
+<li>一种做法：使用两次transform</li>
+</ol>
+<p>a选择器通过transform到b选择器，
+b选择器通过transform到c选择器</p>
+<p>或者使用keyframes</p>
+<pre><code>@keyframes example-one{
+from{
+    transfrom:translateX(0%);
+    }
+to{
+    transform:translateX(100%);
+    }
+}
+</code></pre><pre><code>@keyframes example-two{
+0%{top:0;left:0;}
+50%{top:50px;}
+68%,72%{left:50px;}
+100%{top:100px;left:100%;
+}
+</code></pre><ol start="2">
+<li>另一种做法：使用animation</li>
+</ol>
+<p>缩写语法：</p>
+<p>animation:时长|过渡方式|延迟时间|次数|方向|填充模式|是否暂停|动画名；</p>
+<p>时长：1s或者1000ms</p>
+<p>过渡方式：跟transition取值一样,如linear</p>
+<p>次数：数字或者infinite</p>
+<p>方向：reverse|alternate|alternate-reverse</p>
+<p>填充模式：none|forwards|backwards|both</p>
+<p>是否暂停：paused|running</p>
+<p>例如 动画名为example</p>
+<pre><code>animation: .5s linear 1s 10 alternate forwards example;
+</code></pre>
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>tangallison2 </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=http://tangjixuan.xyz/2021/fifth/>http://tangjixuan.xyz/2021/fifth/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="http://tangjixuan.xyz/">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="http://tangjixuan.xyz/2020/forth/" class="prev" rel="prev" title="《HTML常用标签》"><i class="iconfont icon-left"></i>&nbsp;《HTML常用标签》</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2011 - 2021</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="http://tangjixuan.xyz/">tangallison2</a> | </span> 
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>

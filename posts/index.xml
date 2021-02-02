@@ -6,10 +6,30 @@
     <description>Recent content in Posts on 唐继璇的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Aug 2020 20:06:12 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Feb 2021 00:38:16 +0800</lastBuildDate>
     
 	<atom:link href="http://tangjixuan.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>《css知识总结》</title>
+      <link>http://tangjixuan.xyz/2021/fifth/</link>
+      <pubDate>Wed, 03 Feb 2021 00:38:16 +0800</pubDate>
+      
+      <guid>http://tangjixuan.xyz/2021/fifth/</guid>
+      <description> 浏览器渲染原理   根据HTML构建HTML树(DOM) 根据CSS构建CSS树(CSSDOM) 将两棵树合并成一颗渲染树(render tree) Layout布局(文档流、盒模型、计算大小和位置) Paint绘制(边框颜色、文字颜色、阴影) Compose合成(根据层叠关系展示画面)    CSS 动画的两种做法   一种做法：使用两次transform  a选择器通过transform到b选择器， b选择器通过transform到c选择器
+或者使用keyframes
+@keyframes example-one{ from{ transfrom:translateX(0%); } to{ transform:translateX(100%); } } @keyframes example-two{ 0%{top:0;left:0;} 50%{top:50px;} 68%,72%{left:50px;} 100%{top:100px;left:100%; } 另一种做法：使用animation  缩写语法：
+animation:时长|过渡方式|延迟时间|次数|方向|填充模式|是否暂停|动画名；
+时长：1s或者1000ms
+过渡方式：跟transition取值一样,如linear
+次数：数字或者infinite
+方向：reverse|alternate|alternate-reverse
+填充模式：none|forwards|backwards|both
+是否暂停：paused|running
+例如 动画名为example
+animation: .5s linear 1s 10 alternate forwards example; </description>
+    </item>
     
     <item>
       <title>《HTML常用标签》</title>
