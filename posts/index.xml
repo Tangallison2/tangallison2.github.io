@@ -6,10 +6,40 @@
     <description>Recent content in Posts on 唐继璇的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Feb 2021 00:38:16 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 04 Feb 2021 10:24:00 +0800</lastBuildDate>
     
 	<atom:link href="http://tangjixuan.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>浅析URL</title>
+      <link>http://tangjixuan.xyz/2021/sixth/</link>
+      <pubDate>Thu, 04 Feb 2021 10:24:00 +0800</pubDate>
+      
+      <guid>http://tangjixuan.xyz/2021/sixth/</guid>
+      <description>1. URL 包含哪几部分，每部分分别有什么作用 URL包含协议、域名或IP、端口号、路径、查询字符串、锚点。
+举个例子
+https://www.baidu.com:443/s?wd=hello&amp;amp;rsv_spt=1#6   https是协议，他表明浏览器必须使用什么协议。
+  www.baidu.com是域名。他表明浏览器正在请求哪个Web服务器。除了使用域名，也可以直接使用IP地址
+  :443是端口。它表示用于访问Web服务器上的不同资源的入口。如果Web服务器使用HTTP协议的标准端口（HTTP为80，HTTPS为443）来授予其资源的访问权限，则通常会被忽略。否则是强制性的。
+  /s是web服务器上资源的路径。
+  ?wd=hello&amp;amp;rsv_spt=1是提供给网络服务器的查询字符串。
+  #6是资源本身的另一部分的锚点. 锚点表示资源中的一种“书签”，给浏览器显示位于该“加书签”位置的内容的方向。
+  2. DNS 的作用是什么，nslookup 命令怎么用 DNS的作用是把域名和端口对应起来。
+可使用nslookup命令查询到域名对应IP地址
+nslookup example.com 3. IP 的作用是什么，ping 命令怎么用 IP地址是分配给连接到使用Internet协议的网络的每个设备的一串数字。 相对应,浏览器可以向电信DNS服务器询问example.comm域名对应的IP地址,向IP地址对应的设备,发出访问资源的请求.
+例如可以使用ping命令找到当前域名访问的IP地址
+ping example.com 4. 域名是什么，分别哪几类域名 域名就是对IP的别称,个人认为就像中英文互相翻译,域名和IP的关系也是如此,一个域名可以对应多个Ip,多个域名也可以共享一个IP主机设备.
+ 顶级域名  .com 公司类
+.org 组织类
+.net 互联网类
+.gov 政府机构
+.edu 教育机构
+顶级域名可以告诉用户域名所提供的服务类型。
+  example.com是二级域名
+  wwww.example.com是三级域名,与二级域名是父子关系.
+  </description>
+    </item>
     
     <item>
       <title>《css知识总结》</title>

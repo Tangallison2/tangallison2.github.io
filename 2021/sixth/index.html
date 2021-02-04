@@ -9,9 +9,9 @@
   
   
   
-  <link rel="prev" href="http://tangjixuan.xyz/2020/forth/" />
-  <link rel="next" href="http://tangjixuan.xyz/2021/sixth/" />
-  <link rel="canonical" href="http://tangjixuan.xyz/2021/fifth/" />
+  <link rel="prev" href="http://tangjixuan.xyz/2021/fifth/" />
+  
+  <link rel="canonical" href="http://tangjixuan.xyz/2021/sixth/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           《css知识总结》 | 唐继璇的博客
+           浅析URL | 唐继璇的博客
        
   </title>
-  <meta name="title" content="《css知识总结》 | 唐继璇的博客">
+  <meta name="title" content="浅析URL | 唐继璇的博客">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "http:\/\/tangjixuan.xyz\/"
     },
     "articleSection" : "posts",
-    "name" : "《css知识总结》",
-    "headline" : "《css知识总结》",
-    "description" : " 浏览器渲染原理   根据HTML构建HTML树(DOM) 根据CSS构建CSS树(CSSDOM) 将两棵树合并成一颗渲染树(render tree) Layout布局(文档流、盒模型、计算大小和位置) Paint绘制(边框颜色、文字颜色、阴影) Compose合成(根据层叠关系展示画面)    CSS 动画的两种做法   一种做法：使用两次transform  a选择器通过transform到b选择器， b选择器通过transform到c选择器\n或者使用keyframes\n@keyframes example-one{ from{ transfrom:translateX(0%); } to{ transform:translateX(100%); } } @keyframes example-two{ 0%{top:0;left:0;} 50%{top:50px;} 68%,72%{left:50px;} 100%{top:100px;left:100%; } 另一种做法：使用animation  缩写语法：\nanimation:时长|过渡方式|延迟时间|次数|方向|填充模式|是否暂停|动画名；\n时长：1s或者1000ms\n过渡方式：跟transition取值一样,如linear\n次数：数字或者infinite\n方向：reverse|alternate|alternate-reverse\n填充模式：none|forwards|backwards|both\n是否暂停：paused|running\n例如 动画名为example\nanimation: .5s linear 1s 10 alternate forwards example; ",
+    "name" : "浅析URL",
+    "headline" : "浅析URL",
+    "description" : "1. URL 包含哪几部分，每部分分别有什么作用 URL包含协议、域名或IP、端口号、路径、查询字符串、锚点。\n举个例子\nhttps:\/\/www.baidu.com:443\/s?wd=hello\u0026amp;rsv_spt=1#6   https是协议，他表明浏览器必须使用什么协议。\n  www.baidu.com是域名。他表明浏览器正在请求哪个Web服务器。除了使用域名，也可以直接使用IP地址\n  :443是端口。它表示用于访问Web服务器上的不同资源的入口。如果Web服务器使用HTTP协议的标准端口（HTTP为80，HTTPS为443）来授予其资源的访问权限，则通常会被忽略。否则是强制性的。\n  \/s是web服务器上资源的路径。\n  ?wd=hello\u0026amp;rsv_spt=1是提供给网络服务器的查询字符串。\n  #6是资源本身的另一部分的锚点. 锚点表示资源中的一种“书签”，给浏览器显示位于该“加书签”位置的内容的方向。\n  2. DNS 的作用是什么，nslookup 命令怎么用 DNS的作用是把域名和端口对应起来。\n可使用nslookup命令查询到域名对应IP地址\nnslookup example.com 3. IP 的作用是什么，ping 命令怎么用 IP地址是分配给连接到使用Internet协议的网络的每个设备的一串数字。 相对应,浏览器可以向电信DNS服务器询问example.comm域名对应的IP地址,向IP地址对应的设备,发出访问资源的请求.\n例如可以使用ping命令找到当前域名访问的IP地址\nping example.com 4. 域名是什么，分别哪几类域名 域名就是对IP的别称,个人认为就像中英文互相翻译,域名和IP的关系也是如此,一个域名可以对应多个Ip,多个域名也可以共享一个IP主机设备.\n 顶级域名  .com 公司类\n.org 组织类\n.net 互联网类\n.gov 政府机构\n.edu 教育机构\n顶级域名可以告诉用户域名所提供的服务类型。\n  example.com是二级域名\n  wwww.example.com是三级域名,与二级域名是父子关系.\n  ",
     "inLanguage" : "en-us",
     "author" : "tangallison2",
     "creator" : "tangallison2",
@@ -54,10 +54,10 @@
     "accountablePerson" : "tangallison2",
     "copyrightHolder" : "tangallison2",
     "copyrightYear" : "2021",
-    "datePublished": "2021-02-03 00:38:16 \u002b0800 CST",
-    "dateModified" : "2021-02-03 00:38:16 \u002b0800 CST",
-    "url" : "http:\/\/tangjixuan.xyz\/2021\/fifth\/",
-    "wordCount" : "49",
+    "datePublished": "2021-02-04 10:24:00 \u002b0800 CST",
+    "dateModified" : "2021-02-04 10:24:00 \u002b0800 CST",
+    "url" : "http:\/\/tangjixuan.xyz\/2021\/sixth\/",
+    "wordCount" : "47",
     "keywords" : [  "唐继璇的博客"]
 }
 </script>
@@ -116,11 +116,11 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">《css知识总结》</h1>
+        <h1 class="post-title" itemprop="name headline">浅析URL</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="http://tangjixuan.xyz/" rel="author">tangallison2</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2021-02-03 itemprop="datePublished">February 3, 2021</time>
+                on <time datetime=2021-02-04 itemprop="datePublished">February 4, 2021</time>
                 </span>
                 in
                 
@@ -129,8 +129,6 @@
     <div class="post-content">
         
 
-        
-            
         
 
         
@@ -144,55 +142,59 @@
           
           
 
-          <ul>
-<li>浏览器渲染原理</li>
+          <h2 id="1-url-包含哪几部分每部分分别有什么作用">1. URL 包含哪几部分，每部分分别有什么作用</h2>
+<p>URL包含协议、域名或IP、端口号、路径、查询字符串、锚点。</p>
+<p>举个例子</p>
+<pre><code>https://www.baidu.com:443/s?wd=hello&amp;rsv_spt=1#6
+</code></pre><ul>
+<li>
+<p>https是协议，他表明浏览器必须使用什么协议。</p>
+</li>
+<li>
+<p><a href="http://www.baidu.com">www.baidu.com</a>是域名。他表明浏览器正在请求哪个Web服务器。除了使用域名，也可以直接使用IP地址</p>
+</li>
+<li>
+<p>:443是端口。它表示用于访问Web服务器上的不同资源的入口。如果Web服务器使用HTTP协议的标准端口（HTTP为80，HTTPS为443）来授予其资源的访问权限，则通常会被忽略。否则是强制性的。</p>
+</li>
+<li>
+<p>/s是web服务器上资源的路径。</p>
+</li>
+<li>
+<p>?wd=hello&amp;rsv_spt=1是提供给网络服务器的查询字符串。</p>
+</li>
+<li>
+<p>#6是资源本身的另一部分的锚点. 锚点表示资源中的一种“书签”，给浏览器显示位于该“加书签”位置的内容的方向。</p>
+</li>
 </ul>
-<ol>
-<li>根据HTML构建HTML树(DOM)</li>
-<li>根据CSS构建CSS树(CSSDOM)</li>
-<li>将两棵树合并成一颗渲染树(render tree)</li>
-<li>Layout布局(文档流、盒模型、计算大小和位置)</li>
-<li>Paint绘制(边框颜色、文字颜色、阴影)</li>
-<li>Compose合成(根据层叠关系展示画面)
-<img src="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/render-tree-construction.png" alt="渲染树的合成"></li>
-</ol>
+<h2 id="2-dns-的作用是什么nslookup-命令怎么用">2. DNS 的作用是什么，nslookup 命令怎么用</h2>
+<p>DNS的作用是把域名和端口对应起来。</p>
+<p>可使用nslookup命令查询到域名对应IP地址</p>
+<pre><code>nslookup example.com
+</code></pre><h2 id="3-ip-的作用是什么ping-命令怎么用">3. IP 的作用是什么，ping 命令怎么用</h2>
+<p>IP地址是分配给连接到使用Internet协议的网络的每个设备的一串数字。
+相对应,浏览器可以向电信DNS服务器询问example.comm域名对应的IP地址,向IP地址对应的设备,发出访问资源的请求.</p>
+<p>例如可以使用ping命令找到当前域名访问的IP地址</p>
+<pre><code>ping example.com
+</code></pre><h2 id="4-域名是什么分别哪几类域名">4. 域名是什么，分别哪几类域名</h2>
+<p>域名就是对IP的别称,个人认为就像中英文互相翻译,域名和IP的关系也是如此,一个域名可以对应多个Ip,多个域名也可以共享一个IP主机设备.</p>
 <ul>
-<li>CSS 动画的两种做法</li>
+<li>顶级域名</li>
 </ul>
-<ol>
-<li>一种做法：使用两次transform</li>
-</ol>
-<p>a选择器通过transform到b选择器，
-b选择器通过transform到c选择器</p>
-<p>或者使用keyframes</p>
-<pre><code>@keyframes example-one{
-from{
-    transfrom:translateX(0%);
-    }
-to{
-    transform:translateX(100%);
-    }
-}
-</code></pre><pre><code>@keyframes example-two{
-0%{top:0;left:0;}
-50%{top:50px;}
-68%,72%{left:50px;}
-100%{top:100px;left:100%;
-}
-</code></pre><ol start="2">
-<li>另一种做法：使用animation</li>
-</ol>
-<p>缩写语法：</p>
-<p>animation:时长|过渡方式|延迟时间|次数|方向|填充模式|是否暂停|动画名；</p>
-<p>时长：1s或者1000ms</p>
-<p>过渡方式：跟transition取值一样,如linear</p>
-<p>次数：数字或者infinite</p>
-<p>方向：reverse|alternate|alternate-reverse</p>
-<p>填充模式：none|forwards|backwards|both</p>
-<p>是否暂停：paused|running</p>
-<p>例如 动画名为example</p>
-<pre><code>animation: .5s linear 1s 10 alternate forwards example;
-</code></pre>
+<p>.com  公司类</p>
+<p>.org  组织类</p>
+<p>.net 互联网类</p>
+<p>.gov  政府机构</p>
+<p>.edu  教育机构</p>
+<p>顶级域名可以告诉用户域名所提供的服务类型。</p>
+<ul>
+<li>
+<p>example.com是二级域名</p>
+</li>
+<li>
+<p>wwww.example.com是三级域名,与二级域名是父子关系.</p>
+</li>
+</ul>
+
     </div>
 
     <div class="post-copyright">
@@ -206,7 +208,7 @@ to{
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=http://tangjixuan.xyz/2021/fifth/>http://tangjixuan.xyz/2021/fifth/</span>
+                    <a href=http://tangjixuan.xyz/2021/sixth/>http://tangjixuan.xyz/2021/sixth/</span>
             </p>
             
              
@@ -227,10 +229,8 @@ to{
 
     <div class="post-nav">
         
-        <a href="http://tangjixuan.xyz/2020/forth/" class="prev" rel="prev" title="《HTML常用标签》"><i class="iconfont icon-left"></i>&nbsp;《HTML常用标签》</a>
+        <a href="http://tangjixuan.xyz/2021/fifth/" class="prev" rel="prev" title="《css知识总结》"><i class="iconfont icon-left"></i>&nbsp;《css知识总结》</a>
          
-        
-        <a href="http://tangjixuan.xyz/2021/sixth/" class="next" rel="next" title="浅析URL">浅析URL&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -272,9 +272,8 @@ to{
 
 
     
-     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
-      
-     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
     
   
 
