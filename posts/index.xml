@@ -6,10 +6,29 @@
     <description>Recent content in Posts on 唐继璇的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Feb 2021 10:24:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Feb 2021 14:15:09 +0800</lastBuildDate>
     
 	<atom:link href="http://tangjixuan.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>《JavaScript 的诞生》</title>
+      <link>http://tangjixuan.xyz/2021/seventh/</link>
+      <pubDate>Sat, 06 Feb 2021 14:15:09 +0800</pubDate>
+      
+      <guid>http://tangjixuan.xyz/2021/seventh/</guid>
+      <description>JavaScript的历史  起始于网景公司.  JavaScript在1995年由Netscape公司的Brendan Eich，在网景导航者浏览器上首次设计实现而成. 网景公司急需一种网页脚本语言，使得浏览器可以与网页互动。网景决定发明一种与Java搭配使用的辅助脚本语言并且语法上有些类似.艾克在1995年5月仅花了十天时间就把原型设计出来了.
+Javascript语言实际上是两种语言风格的混合产物&amp;mdash;-（简化的）函数式编程+（简化的）面向对象编程。
+微软采纳.  微软对网景的导航解释器进行了逆向工程，创建了JScript，以与处于市场领导地位的网景产品同台竞争。JScript也是一种JavaScript实现，这两个JavaScript语言版本在浏览器端共存意味着语言标准化的缺失，发展初期，JavaScript的标准并未确定，同期有网景的JavaScript，微软的JScript双峰并峙。
+标准化  1996年11月，网景正式向ECMA（欧洲计算机制造商协会）提交语言标准。1997年6月，ECMA以JavaScript语言为基础制定了ECMAScript标准规范ECMA-262。JavaScript成为了ECMAScript最著名的实现之一
+Javascript的10个设计缺陷  不适合开发大型程序 非常小的标准库 null和undefined,两者非常容易混淆，但是含义完全不同。 全局变量难以控制 自动插入行尾分号  Javascript的所有语句，都必须以分号结尾。但是，如果你忘记加分号，解释器并不报错，而是为你自动加上分号。有时候，这会导致一些难以发现的错误。
+加号运算符  +号作为运算符，有两个含义，可以表示数字与数字的和，也可以表示字符与字符的连接。
+这样的设计，不必要地加剧了运算的复杂性，完全可以另行设置一个字符连接的运算符。
+NaN 数组和对象的区分  由于Javascript的数组也属于对象（object），所以要区分一个对象到底是不是数组，相当麻烦。
+== 和 ===  推荐任何时候都使用&amp;quot;===&amp;rdquo;（精确判断）比较符。
+基本类型的包装对象  Javascript有三种基本数据类型：字符串、数字和布尔值。它们都有相应的建构函数，可以生成字符串对象、数字对象和布尔值对象。
+与基本数据类型对应的对象类型，作用很小，造成的混淆却很大。</description>
+    </item>
     
     <item>
       <title>浅析URL</title>
