@@ -2,21 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 唐继璇的博客</title>
-    <link>http://tangjixuan.xyz/posts/</link>
+    <link>http://tangjixuan.top/posts/</link>
     <description>Recent content in Posts on 唐继璇的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Feb 2021 14:15:09 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 14 Jun 2021 00:10:46 +0800</lastBuildDate>
     
-	<atom:link href="http://tangjixuan.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://tangjixuan.top/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Eighth</title>
+      <link>http://tangjixuan.top/2021/eighth/</link>
+      <pubDate>Mon, 14 Jun 2021 00:10:46 +0800</pubDate>
+      
+      <guid>http://tangjixuan.top/2021/eighth/</guid>
+      <description>JS 的基本语法  什么是表达式和语句  表达式例如1+2，console.log(3)
+语句例如 var a = 1
+两者区别是
+表达式一般都有值，语句可能有值可能没有值
+语句一般会改变环境(声明、赋值)
+标识符的规则  第一个字符，可以是Unicode字母或_或中文
+第一个字符后面的字符，除了Unicode字母或_或中文，还可以是数字
+例如
+var _ = 1 var _____ = 6 var $ = 2 var 你好 = &#39;hi&#39; var $1 = 3 if else 语句  语法
+if(表达式){语句1}else{语句2}
+{}在语句只有一句的时候可以省略，但不建议这样做。
+最推荐的写法
+if(表达式){ 语句 }else if(表达式){ 语句 }else{ 语句 } while for 语句  while语句
+语法
+while(表达式){语句}
+当表达式为真，执行语句，执行完再判断表达式的真假。
+当表达式为假，执行后面的语句。
+break continue label  </description>
+    </item>
+    
+    <item>
       <title>《JavaScript 的诞生》</title>
-      <link>http://tangjixuan.xyz/2021/seventh/</link>
+      <link>http://tangjixuan.top/2021/seventh/</link>
       <pubDate>Sat, 06 Feb 2021 14:15:09 +0800</pubDate>
       
-      <guid>http://tangjixuan.xyz/2021/seventh/</guid>
+      <guid>http://tangjixuan.top/2021/seventh/</guid>
       <description>JavaScript的历史  起始于网景公司.  JavaScript在1995年由Netscape公司的Brendan Eich，在网景导航者浏览器上首次设计实现而成. 网景公司急需一种网页脚本语言，使得浏览器可以与网页互动。网景决定发明一种与Java搭配使用的辅助脚本语言并且语法上有些类似.艾克在1995年5月仅花了十天时间就把原型设计出来了.
 Javascript语言实际上是两种语言风格的混合产物&amp;mdash;-（简化的）函数式编程+（简化的）面向对象编程。
 微软采纳.  微软对网景的导航解释器进行了逆向工程，创建了JScript，以与处于市场领导地位的网景产品同台竞争。JScript也是一种JavaScript实现，这两个JavaScript语言版本在浏览器端共存意味着语言标准化的缺失，发展初期，JavaScript的标准并未确定，同期有网景的JavaScript，微软的JScript双峰并峙。
@@ -32,10 +58,10 @@ NaN 数组和对象的区分  由于Javascript的数组也属于对象（object�
     
     <item>
       <title>浅析URL</title>
-      <link>http://tangjixuan.xyz/2021/sixth/</link>
+      <link>http://tangjixuan.top/2021/sixth/</link>
       <pubDate>Thu, 04 Feb 2021 10:24:00 +0800</pubDate>
       
-      <guid>http://tangjixuan.xyz/2021/sixth/</guid>
+      <guid>http://tangjixuan.top/2021/sixth/</guid>
       <description>1. URL 包含哪几部分，每部分分别有什么作用 URL包含协议、域名或IP、端口号、路径、查询字符串、锚点。
 举个例子
 https://www.baidu.com:443/s?wd=hello&amp;amp;rsv_spt=1#6   https是协议，他表明浏览器必须使用什么协议。
@@ -62,10 +88,10 @@ ping example.com 4. 域名是什么，分别哪几类域名 域名就是对IP的
     
     <item>
       <title>《css知识总结》</title>
-      <link>http://tangjixuan.xyz/2021/fifth/</link>
+      <link>http://tangjixuan.top/2021/fifth/</link>
       <pubDate>Wed, 03 Feb 2021 00:38:16 +0800</pubDate>
       
-      <guid>http://tangjixuan.xyz/2021/fifth/</guid>
+      <guid>http://tangjixuan.top/2021/fifth/</guid>
       <description> 浏览器渲染原理   根据HTML构建HTML树(DOM) 根据CSS构建CSS树(CSSDOM) 将两棵树合并成一颗渲染树(render tree) Layout布局(文档流、盒模型、计算大小和位置) Paint绘制(边框颜色、文字颜色、阴影) Compose合成(根据层叠关系展示画面)    CSS 动画的两种做法   一种做法：使用两次transform  a选择器通过transform到b选择器， b选择器通过transform到c选择器
 或者使用keyframes
 @keyframes example-one{ from{ transfrom:translateX(0%); } to{ transform:translateX(100%); } } @keyframes example-two{ 0%{top:0;left:0;} 50%{top:50px;} 68%,72%{left:50px;} 100%{top:100px;left:100%; } 另一种做法：使用animation  缩写语法：
@@ -82,10 +108,10 @@ animation: .5s linear 1s 10 alternate forwards example; </description>
     
     <item>
       <title>《HTML常用标签》</title>
-      <link>http://tangjixuan.xyz/2020/forth/</link>
+      <link>http://tangjixuan.top/2020/forth/</link>
       <pubDate>Mon, 03 Aug 2020 20:06:12 +0800</pubDate>
       
-      <guid>http://tangjixuan.xyz/2020/forth/</guid>
+      <guid>http://tangjixuan.top/2020/forth/</guid>
       <description>1、a标签的用法  href属性，超文本引用。  &amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;超文本链接&amp;lt;/a&amp;gt; 备注：href的值可以是
 网址
 https://google.com
@@ -121,10 +147,10 @@ width,宽度，值是数字。
     
     <item>
       <title>《HTML入门笔记1》</title>
-      <link>http://tangjixuan.xyz/2020/third/</link>
+      <link>http://tangjixuan.top/2020/third/</link>
       <pubDate>Sun, 14 Jun 2020 15:48:31 +0800</pubDate>
       
-      <guid>http://tangjixuan.xyz/2020/third/</guid>
+      <guid>http://tangjixuan.top/2020/third/</guid>
       <description>1. HTML 到底是谁发明的？  Tim Berners-Lee（李爵士）,他发明了 HTML、WWW、HTTP 和 URL，用自己写的浏览器访问了自己写的服务器。  2. HTML 起手应该写什么？ &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;zh-CN&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; 3. 常用的表章节的标签有哪些，分别是什么意思?  标题 h1~h6 章节 section 文章 article 段落 p 头部 header 脚部 footer 主要内容 main 旁支内容 aside 划分 div  4. 全局属性有哪些? class contenteditable
 hidden id style tabindex title
 5. 常用的内容标签有哪些，分别是什么意思（a、strong、em、code、pre 等等）?  ol+li (ordered list + list item 有顺序的列表+列表中的一项）  &amp;lt;p&amp;gt;每天要做的事情&amp;lt;/p&amp;gt; &amp;lt;ol&amp;gt; &amp;lt;li&amp;gt;吃饭&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;睡觉&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;玩游戏&amp;lt;/li&amp;gt; &amp;lt;/ol&amp;gt;   ul+li (unordered list +list item 无顺序的列表+列表中的一项)</description>
@@ -132,10 +158,10 @@ hidden id style tabindex title
     
     <item>
       <title>如何用hugo搭建一个博客</title>
-      <link>http://tangjixuan.xyz/2020/first/</link>
+      <link>http://tangjixuan.top/2020/first/</link>
       <pubDate>Sun, 19 Apr 2020 22:45:52 +0800</pubDate>
       
-      <guid>http://tangjixuan.xyz/2020/first/</guid>
+      <guid>http://tangjixuan.top/2020/first/</guid>
       <description>在已有github账户和已安装Cmder和VSCODE的情况下，使用hugo搭建一个博客 当然如果没有注册github账户和未安装Cmder和VSCODE软件，可以先去安装啊
  首先安装hugo   点它hugo安装包链接 选择适合你的版本号安装，例如windows用户可选hugo_XXXXX_Windows-64bit.zip 安装后，可在Cmder软件中输入  hugo version 如果显示出版本信息，则安装成功。
 Google里面搜索hugo,进入hugo官网   点击quickstart,png  先在Cmder进入你放文件的目录，从Step 2开始一步一步更着官网的代码在Cmder上输入,下面的XXXX你可以替换成你的github用户名。  step2
@@ -147,7 +173,7 @@ draft:false 可以在博客里面写一些内容
 step5
 hugo server -D 效果是启动hugo服务器，ctrl+点击http://localhost:1313/，就能查看my-first-post.md内容。
 step6 用VSCODE打开XXXX.github.io-creator，找到并打开文件config.toml，用更私人的标题替代下面的对应代码。
-baseURL = &amp;quot;http://tangjixuan.xyz/&amp;quot; languageCode = &amp;quot;en-us&amp;quot; title = &amp;quot;My New Hugo Site&amp;quot; theme = &amp;quot;ananke&amp;quot; step7 在Cmder中输入</description>
+baseURL = &amp;quot;http://tangjixuan.top/&amp;quot; languageCode = &amp;quot;en-us&amp;quot; title = &amp;quot;My New Hugo Site&amp;quot; theme = &amp;quot;ananke&amp;quot; step7 在Cmder中输入</description>
     </item>
     
   </channel>

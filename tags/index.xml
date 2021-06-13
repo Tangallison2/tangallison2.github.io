@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 唐继璇的博客</title>
-    <link>http://tangjixuan.xyz/tags/</link>
+    <link>http://tangjixuan.top/tags/</link>
     <description>Recent content in Tags on 唐继璇的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://tangjixuan.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://tangjixuan.top/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
