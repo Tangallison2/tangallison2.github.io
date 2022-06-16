@@ -9,9 +9,9 @@
   
   
   
-  <link rel="prev" href="http://tangjixuan.top/2021/seventh/" />
-  <link rel="next" href="http://tangjixuan.top/2022/js%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" />
-  <link rel="canonical" href="http://tangjixuan.top/2021/eighth/" />
+  <link rel="prev" href="http://tangjixuan.top/2021/eighth/" />
+  
+  <link rel="canonical" href="http://tangjixuan.top/2022/js%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           JS 的基本语法 | 唐继璇的博客
+           Js对象的基本用法 | 唐继璇的博客
        
   </title>
-  <meta name="title" content="JS 的基本语法 | 唐继璇的博客">
+  <meta name="title" content="Js对象的基本用法 | 唐继璇的博客">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,20 +44,20 @@
          "@id": "http:\/\/tangjixuan.top\/"
     },
     "articleSection" : "posts",
-    "name" : "JS 的基本语法",
-    "headline" : "JS 的基本语法",
-    "description" : "JS 的基本语法  什么是表达式和语句  表达式例如1\u002b2，console.log(3)\n语句例如 var a = 1\n两者区别是\n表达式一般都有值，语句可能有值可能没有值\n语句一般会改变环境(声明、赋值)\n标识符的规则  第一个字符，可以是Unicode字母或_或中文\n第一个字符后面的字符，除了Unicode字母或_或中文，还可以是数字\n例如\nvar _ = 1 var _____ = 6 var $ = 2 var 你好 = \u0027hi\u0027 var $1 = 3 if else 语句  语法\nif(表达式){语句1}else{语句2}\n{}在语句只有一句的时候可以省略，但不建议这样做。\n最推荐的写法\nif(表达式){ 语句 }else if(表达式){ 语句 }else{ 语句 } while for 语句  while语句\n语法\nwhile(表达式){语句}\n当表达式为真，执行语句，执行完再判断表达式的真假。\n当表达式为假，执行后面的语句。\nfor语句\nfor语句是while语句的方便写法。\nfor(语句1;表达式2;语句3){ 循环体 }\n先执行语句1，然后判断表达式真假，若为真则执行循环体，然后执行语句3；若为假则直接退出循环执行后面的语句。",
+    "name" : "Js对象的基本用法",
+    "headline" : "Js对象的基本用法",
+    "description" : "《JS 对象基本用法》  声明对象的两种语法  let obj = { \u0027name\u0027: \u0027tang\u0027, \u0027age\u0027: 18 } let obj = new Object({\u0027name\u0027: \u0027tang\u0027}) 如何删除对象的属性  delete obj.xxx delete obj[\u0027xxx\u0027]  验证对象是否存在属性\u0026rsquo;xxx\u0026rsquo;,若显示false则不存在  \u0027xxx\u0027 in obj === false  对象含有属性名，但是属性值为undefined的情况  \u0026lsquo;xxx\u0026rsquo; in obj \u0026amp;\u0026amp; obj.xxx ===undefined\n 注意obj.xxx===undefined不能判断\u0026rsquo;xxx\u0026rsquo;是否为obj的属性  如何查看对象的属性  obj.xxx obj[\u0027xxx\u0027] 查看对象的所有属性名\nObject.keys(obj) 查看对象的所有属性值\nObject.values(obj) 查看对象的属性\nconsole.dir(obj) Object.entries(obj) 如何修改或增加对象的属性  已有属性则改，没有属性则增。\n 修改或者增加对象的自身属性  obj.name = \u0027tang\u0027 obj[\u0027name\u0027] = \u0027tang\u0027 或者",
     "inLanguage" : "en-us",
     "author" : "tangallison2",
     "creator" : "tangallison2",
     "publisher": "tangallison2",
     "accountablePerson" : "tangallison2",
     "copyrightHolder" : "tangallison2",
-    "copyrightYear" : "2021",
-    "datePublished": "2021-06-14 00:10:46 \u002b0800 CST",
-    "dateModified" : "2021-06-14 00:10:46 \u002b0800 CST",
-    "url" : "http:\/\/tangjixuan.top\/2021\/eighth\/",
-    "wordCount" : "74",
+    "copyrightYear" : "2022",
+    "datePublished": "2022-06-16 15:14:17 \u002b0800 CST",
+    "dateModified" : "2022-06-16 15:14:17 \u002b0800 CST",
+    "url" : "http:\/\/tangjixuan.top\/2022\/js%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95\/",
+    "wordCount" : "101",
     "keywords" : [  "唐继璇的博客"]
 }
 </script>
@@ -116,11 +116,11 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">JS 的基本语法</h1>
+        <h1 class="post-title" itemprop="name headline">Js对象的基本用法</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="http://tangjixuan.top/" rel="author">tangallison2</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2021-06-14 itemprop="datePublished">June 14, 2021</time>
+                on <time datetime=2022-06-16 itemprop="datePublished">June 16, 2022</time>
                 </span>
                 in
                 
@@ -142,64 +142,76 @@
           
           
 
-          <h2 id="js-的基本语法">JS 的基本语法</h2>
+          <h1 id="js-对象基本用法">《JS 对象基本用法》</h1>
 <ol>
-<li>什么是表达式和语句</li>
+<li>声明对象的两种语法</li>
 </ol>
-<p>表达式例如1+2，console.log(3)</p>
-<p>语句例如 var a = 1</p>
-<p>两者区别是</p>
-<p>表达式一般都有值，语句可能有值可能没有值</p>
-<p>语句一般会改变环境(声明、赋值)</p>
-<ol start="2">
-<li>标识符的规则</li>
+<pre><code>let obj = { 'name': 'tang', 'age': 18 }
+
+let obj = new Object({'name': 'tang'})
+</code></pre><ol start="2">
+<li>如何删除对象的属性</li>
 </ol>
-<p>第一个字符，可以是Unicode字母或_或中文</p>
-<p>第一个字符后面的字符，除了Unicode字母或_或中文，还可以是数字</p>
-<p>例如</p>
-<pre><code>var _ = 1
-var _____ = 6
-var $ = 2
-var 你好 = 'hi'
-var $1 = 3
-</code></pre><ol start="3">
-<li>if else 语句</li>
+<pre><code>delete obj.xxx
+delete obj['xxx']
+</code></pre><ul>
+<li>验证对象是否存在属性&rsquo;xxx&rsquo;,若显示false则不存在</li>
+</ul>
+<pre><code>'xxx' in obj === false
+</code></pre><ul>
+<li>对象含有属性名，但是属性值为undefined的情况</li>
+</ul>
+<p>&lsquo;xxx&rsquo; in obj &amp;&amp; obj.xxx ===undefined</p>
+<ul>
+<li>注意obj.xxx===undefined不能判断&rsquo;xxx&rsquo;是否为obj的属性</li>
+</ul>
+<ol start="3">
+<li>如何查看对象的属性</li>
 </ol>
-<p>语法</p>
-<p>if(表达式){语句1}else{语句2}</p>
-<p>{}在语句只有一句的时候可以省略，但不建议这样做。</p>
-<p>最推荐的写法</p>
-<pre><code>if(表达式){
-    语句
-}else if(表达式){
-    语句
-}else{
-    语句
-}
+<pre><code>obj.xxx
+obj['xxx']
+</code></pre><p>查看对象的所有属性名</p>
+<pre><code>Object.keys(obj)
+</code></pre><p>查看对象的所有属性值</p>
+<pre><code>Object.values(obj)
+</code></pre><p>查看对象的属性</p>
+<pre><code>console.dir(obj)
+</code></pre><pre><code>Object.entries(obj)
 </code></pre><ol start="4">
-<li>while for 语句</li>
+<li>如何修改或增加对象的属性</li>
 </ol>
-<p>while语句</p>
-<p>语法</p>
-<p>while(表达式){语句}</p>
-<p>当表达式为真，执行语句，执行完再判断表达式的真假。</p>
-<p>当表达式为假，执行后面的语句。</p>
-<p>for语句</p>
-<p>for语句是while语句的方便写法。</p>
-<p>for(语句1;表达式2;语句3){
-循环体
-}</p>
-<p>先执行语句1，然后判断表达式真假，若为真则执行循环体，然后执行语句3；若为假则直接退出循环执行后面的语句。</p>
-<ol start="5">
-<li>break continue</li>
+<p>已有属性则改，没有属性则增。</p>
+<ul>
+<li>修改或者增加对象的自身属性</li>
+</ul>
+<pre><code>obj.name = 'tang'
+obj['name'] = 'tang'
+</code></pre><p>或者</p>
+<pre><code>let key = 'name'
+obj[key] = 'tang'
+</code></pre><p>key是变量，obj[key]是变量求值，相当于obj[&lsquo;name&rsquo;]</p>
+<p>批量增加属性</p>
+<pre><code>Object.array(obj,{'name':'tang','age':26})
+</code></pre><ul>
+<li>修改或者增加对象的共有属性</li>
+</ul>
+<p>第一种方法：可以了解但是不推荐使用</p>
+<pre><code>obj.__proto__.toString = 'xxx'
+</code></pre><p>第二种方法：</p>
+<pre><code>Object.prototype.toString = 'xxx'
+</code></pre><ul>
+<li>修改或者增加对象的原型</li>
+</ul>
+<pre><code>let common = {'name':'tang'}
+</code></pre><pre><code>let obj = Object.create(common)
+</code></pre><p>或者(只需要了解，不推荐使用含有__proto__代码)</p>
+<pre><code>obj.__proto__ = common
+</code></pre><ol start="5">
+<li>&lsquo;name&rsquo; in obj和obj.hasOwnProperty(&lsquo;name&rsquo;) 的区别</li>
 </ol>
-<p>break退出所有循环</p>
-<p>continue退出当前一次循环</p>
-<ol start="6">
-<li>label</li>
-</ol>
-<p>语法foo: {语句}</p>
-<p>特例 {foo：1}执行后的结果是1，这时它不是一个对象。</p>
+<p>&lsquo;name&rsquo; in obj 无法看出对象自身属性还是共有属性</p>
+<pre><code>obj.hasOwnProperty('name') === true 
+</code></pre><p>表示&rsquo;name&rsquo;是obj的自身属性</p>
 
     </div>
 
@@ -214,7 +226,7 @@ var $1 = 3
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=http://tangjixuan.top/2021/eighth/>http://tangjixuan.top/2021/eighth/</span>
+                    <a href=http://tangjixuan.top/2022/js%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/>http://tangjixuan.top/2022/js%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</span>
             </p>
             
              
@@ -235,10 +247,8 @@ var $1 = 3
 
     <div class="post-nav">
         
-        <a href="http://tangjixuan.top/2021/seventh/" class="prev" rel="prev" title="《JavaScript 的诞生》"><i class="iconfont icon-left"></i>&nbsp;《JavaScript 的诞生》</a>
+        <a href="http://tangjixuan.top/2021/eighth/" class="prev" rel="prev" title="JS 的基本语法"><i class="iconfont icon-left"></i>&nbsp;JS 的基本语法</a>
          
-        
-        <a href="http://tangjixuan.top/2022/js%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" class="next" rel="next" title="Js对象的基本用法">Js对象的基本用法&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
