@@ -9,9 +9,9 @@
   
   
   
-  <link rel="prev" href="http://tangjixuan.top/2020/first/" />
-  <link rel="next" href="http://tangjixuan.top/2020/forth/" />
-  <link rel="canonical" href="http://tangjixuan.top/2020/third/" />
+  <link rel="prev" href="http://tangjixuan.top/2022/js%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" />
+  
+  <link rel="canonical" href="http://tangjixuan.top/2022/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           《HTML入门笔记1》 | 唐继璇的博客
+           JS函数的执行时机 | 唐继璇的博客
        
   </title>
-  <meta name="title" content="《HTML入门笔记1》 | 唐继璇的博客">
+  <meta name="title" content="JS函数的执行时机 | 唐继璇的博客">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,20 +44,20 @@
          "@id": "http:\/\/tangjixuan.top\/"
     },
     "articleSection" : "posts",
-    "name" : "《HTML入门笔记1》",
-    "headline" : "《HTML入门笔记1》",
-    "description" : "1. HTML 到底是谁发明的？  Tim Berners-Lee（李爵士）,他发明了 HTML、WWW、HTTP 和 URL，用自己写的浏览器访问了自己写的服务器。  2. HTML 起手应该写什么？ \u0026lt;!DOCTYPE html\u0026gt; \u0026lt;html lang=\u0026quot;zh-CN\u0026quot;\u0026gt; \u0026lt;head\u0026gt; \u0026lt;meta charset=\u0026quot;UTF-8\u0026quot;\u0026gt; \u0026lt;meta name=\u0026quot;viewport\u0026quot; content=\u0026quot;width=device-width, initial-scale=1.0\u0026quot;\u0026gt; \u0026lt;title\u0026gt;Document\u0026lt;\/title\u0026gt; \u0026lt;\/head\u0026gt; \u0026lt;body\u0026gt; \u0026lt;\/body\u0026gt; \u0026lt;\/html\u0026gt; 3. 常用的表章节的标签有哪些，分别是什么意思?  标题 h1~h6 章节 section 文章 article 段落 p 头部 header 脚部 footer 主要内容 main 旁支内容 aside 划分 div  4. 全局属性有哪些? class contenteditable\nhidden id style tabindex title\n5. 常用的内容标签有哪些，分别是什么意思（a、strong、em、code、pre 等等）?  ol\u002bli (ordered list \u002b list item 有顺序的列表\u002b列表中的一项）  \u0026lt;p\u0026gt;每天要做的事情\u0026lt;\/p\u0026gt; \u0026lt;ol\u0026gt; \u0026lt;li\u0026gt;吃饭\u0026lt;\/li\u0026gt; \u0026lt;li\u0026gt;睡觉\u0026lt;\/li\u0026gt; \u0026lt;li\u0026gt;玩游戏\u0026lt;\/li\u0026gt; \u0026lt;\/ol\u0026gt;   ul\u002bli (unordered list \u002blist item 无顺序的列表\u002b列表中的一项)",
+    "name" : "JS函数的执行时机",
+    "headline" : "JS函数的执行时机",
+    "description" : "JS函数的执行时机不同，意味着不同的结果,我们举个例子。 setTimeout()方法设置一个定时器，该定时器在定时器到期后执行一个函数或指定的一段代码。我们可以把setTimeout当做尽快执行的意思，尽快执行的前提是把当前手头的事情先做完。 例子一  let i =0 for(i=0;i\u0026lt;6;i\u002b\u002b){ setTimeout(()=\u0026gt;{ console.log(i) },0) }   运行结果是6个6\n  分析一下为什么结果是6个6，而不是0、1、2、3、、4、5？ setTimeout它要把for循环代码执行完再打印出i，for循环执行i=6时，才能跳出for循环，此时i已经执行了6次，i的值是6，等到setTimeout来执行console.log(i)时，得到的结果就是i=6打印6次。\n  例子二 打印出0、1、2、3、4、5的方法\n  for(let i=0;i\u0026lt;6;i\u002b\u002b){ setTimeout(()=\u0026gt;{ console.log(i) },0) } 用for和let配合就可以。\n 例子三 除了使用 for let 配合，还有什么其他方法可以打印出 0、1、2、3、4、5？  for(i=0;i\u0026lt;6;i\u002b\u002b){ console.log(i) } 直接用for就可以",
     "inLanguage" : "en-us",
     "author" : "tangallison2",
     "creator" : "tangallison2",
     "publisher": "tangallison2",
     "accountablePerson" : "tangallison2",
     "copyrightHolder" : "tangallison2",
-    "copyrightYear" : "2020",
-    "datePublished": "2020-06-14 15:48:31 \u002b0800 CST",
-    "dateModified" : "2020-06-14 15:48:31 \u002b0800 CST",
-    "url" : "http:\/\/tangjixuan.top\/2020\/third\/",
-    "wordCount" : "115",
+    "copyrightYear" : "2022",
+    "datePublished": "2022-07-08 13:02:05 \u002b0800 CST",
+    "dateModified" : "2022-07-08 13:02:05 \u002b0800 CST",
+    "url" : "http:\/\/tangjixuan.top\/2022\/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA\/",
+    "wordCount" : "33",
     "keywords" : [  "唐继璇的博客"]
 }
 </script>
@@ -116,11 +116,11 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">《HTML入门笔记1》</h1>
+        <h1 class="post-title" itemprop="name headline">JS函数的执行时机</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="http://tangjixuan.top/" rel="author">tangallison2</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2020-06-14 itemprop="datePublished">June 14, 2020</time>
+                on <time datetime=2022-07-08 itemprop="datePublished">July 8, 2022</time>
                 </span>
                 in
                 
@@ -142,83 +142,43 @@
           
           
 
-          <h2 id="1-html-到底是谁发明的">1. HTML 到底是谁发明的？</h2>
-<ul>
-<li>Tim Berners-Lee（李爵士）,他发明了 HTML、WWW、HTTP 和 URL，用自己写的浏览器访问了自己写的服务器。</li>
+          <ul>
+<li>JS函数的执行时机不同，意味着不同的结果,我们举个例子。</li>
+<li>setTimeout()方法设置一个定时器，该定时器在定时器到期后执行一个函数或指定的一段代码。我们可以把setTimeout当做尽快执行的意思，尽快执行的前提是把当前手头的事情先做完。</li>
+<li>例子一</li>
 </ul>
-<h2 id="2-html-起手应该写什么">2. HTML 起手应该写什么？</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;zh-CN&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><h2 id="3-常用的表章节的标签有哪些分别是什么意思">3. 常用的表章节的标签有哪些，分别是什么意思?</h2>
-<ul>
-<li>标题 h1~h6</li>
-<li>章节 section</li>
-<li>文章 article</li>
-<li>段落 p</li>
-<li>头部 header</li>
-<li>脚部 footer</li>
-<li>主要内容 main</li>
-<li>旁支内容 aside</li>
-<li>划分 div</li>
-</ul>
-<h2 id="4-全局属性有哪些">4. 全局属性有哪些?</h2>
-<p>class
-contenteditable<br>
-hidden
-id
-style
-tabindex
-title</p>
-<h2 id="5-常用的内容标签有哪些分别是什么意思astrongemcodepre-等等">5. 常用的内容标签有哪些，分别是什么意思（a、strong、em、code、pre 等等）?</h2>
-<ul>
-<li>ol+li (ordered list + list item 有顺序的列表+列表中的一项）</li>
-</ul>
-<pre><code>&lt;p&gt;每天要做的事情&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;吃饭&lt;/li&gt;
-  &lt;li&gt;睡觉&lt;/li&gt;
-  &lt;li&gt;玩游戏&lt;/li&gt;
-&lt;/ol&gt;
+<pre><code>let i =0
+for(i=0;i&lt;6;i++){
+    setTimeout(()=&gt;{
+        console.log(i)
+    },0)
+}
+
 </code></pre><ul>
 <li>
-<p>ul+li (unordered list +list item 无顺序的列表+列表中的一项)</p>
+<p>运行结果是6个6</p>
 </li>
 <li>
-<p>dl+dt+dd</p>
-<p>dd:description list</p>
-<p>dt:description item 描述术语</p>
-<p>dd:description definition 描述定义</p>
-<pre><code>&lt;dl&gt;
-  &lt;dt&gt;苹果&lt;/dt&gt;
-  &lt;dd&gt;水果的一种&lt;/dd&gt;
-&lt;/dl&gt;
-</code></pre></li>
+<p>分析一下为什么结果是6个6，而不是0、1、2、3、、4、5？
+setTimeout它要把for循环代码执行完再打印出i，for循环执行i=6时，才能跳出for循环，此时i已经执行了6次，i的值是6，等到setTimeout来执行console.log(i)时，得到的结果就是i=6打印6次。</p>
+</li>
+<li>
+<p>例子二  打印出0、1、2、3、4、5的方法</p>
+</li>
 </ul>
+<pre><code>for(let i=0;i&lt;6;i++){
+    setTimeout(()=&gt;{
+        console.log(i)
+    },0)
+}
+</code></pre><p>用for和let配合就可以。</p>
 <ul>
-<li>pre (preview 的缩写,可以让多个连续的 tab 键、enter 键、空格显示出来)</li>
-<li>hr（意思出现一条水平线）</li>
-<li>br(break 的缩写，效果是换行)</li>
-<li>a （anchor 锚点的缩写）</li>
+<li>例子三 除了使用 for let 配合，还有什么其他方法可以打印出 0、1、2、3、4、5？</li>
 </ul>
-<pre><code>&lt;p&gt;访问网站
-&lt;a href=&quot;http://qq.com&quot;&gt;QQ&lt;/a&gt;
-&lt;/p&gt;
-</code></pre><p>访问网站<a href="http://qq.com">QQ</a></p>
-<ul>
-<li>em（emphasis 强调的缩写,效果是字体变斜)</li>
-<li>strong（重要）</li>
-<li>code（代码，效果是代码字体等宽）</li>
-<li>q（quote 引用的缩写）</li>
-<li>blockquote（块引用）</li>
-</ul>
+<pre><code>for(i=0;i&lt;6;i++){
+    console.log(i)
+}
+</code></pre><p>直接用for就可以</p>
 
     </div>
 
@@ -233,7 +193,7 @@ title</p>
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=http://tangjixuan.top/2020/third/>http://tangjixuan.top/2020/third/</span>
+                    <a href=http://tangjixuan.top/2022/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/>http://tangjixuan.top/2022/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</span>
             </p>
             
              
@@ -254,10 +214,8 @@ title</p>
 
     <div class="post-nav">
         
-        <a href="http://tangjixuan.top/2020/first/" class="prev" rel="prev" title="如何用hugo搭建一个博客"><i class="iconfont icon-left"></i>&nbsp;如何用hugo搭建一个博客</a>
+        <a href="http://tangjixuan.top/2022/js%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" class="prev" rel="prev" title="Js对象的基本用法"><i class="iconfont icon-left"></i>&nbsp;Js对象的基本用法</a>
          
-        
-        <a href="http://tangjixuan.top/2020/forth/" class="next" rel="next" title="《HTML常用标签》">《HTML常用标签》&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
